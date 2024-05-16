@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="slider-container">
+            <label for="vibrationSlider">Vibration Power</label>
+            <input type="range" id="vibrationSlider" min="0" max="4" value="0">
+            <span id="vibrationValue">0</span>
+        </div>
+
+        <div class="motor-container">
+            <label>Motor 1 ITR Speed</label>
+            <button class="btn" id="motor1Increase">+</button>
+            <button class="btn" id="motor1Decrease">-</button>
+            <span id="motor1Speed">0</span>
+        </div>
+
+        <div class="motor-container">
+            <label>Motor 2 ITR Speed</label>
+            <button class="btn" id="motor2Increase">+</button>
+            <button class="btn" id="motor2Decrease">-</button>
+            <span id="motor2Speed">0</span>
+        </div>
+
+        <div class="wifi-container">
+            <label for="wifiNetwork">Wifi Network</label>
+            <input type="text" id="wifiNetwork" placeholder="Enter Wifi Network">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter Password">
+        </div>
+
+        <button class="btn save-btn" id="saveButton">Save</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
